@@ -32,6 +32,7 @@
 | --- | --- | --- | --- |
 | **二猫云** | ¥20/月起 | 月付 / 年付 / 按量 | [查看介绍与套餐](https://jichangorigin.blog/airports/ermaoyun/) |
 | **闪电鼠** | ¥19.9/月起 | 按月或按年 | [查看介绍与套餐](https://jichangorigin.blog/airports/shandianshu/) |
+| **瞬云** | ¥18/月起 | 月付 / 年付 / 按量 | [查看介绍与套餐](https://jichangorigin.blog/airports/shunyun/) |
 | **环球梯** | ¥12/月起 | 月付 / 年付 / 按量 | [查看介绍与套餐](https://jichangorigin.blog/airports/huanqiuti/) |
 | **大佬云** | ¥19.99/月起 | 月付 / 年付 / 按量 | [查看介绍与套餐](https://jichangorigin.blog/airports/dalaoyun/) |
 | **神行加速** | ¥23/月起 | 月付 / 年付 / 按量 | [查看介绍与套餐](https://jichangorigin.blog/airports/shenxing/) |
@@ -41,7 +42,6 @@
 | **隐形人** | ¥24/月起 | 月付 / 年付 / 按量 | [查看介绍与套餐](https://jichangorigin.blog/airports/invisible/) |
 | **灵猫网络** | ¥25/月起 | 月付 / 年付 / 按量 | [查看介绍与套餐](https://jichangorigin.blog/airports/civet/) |
 | **鲲鹏加速** | ¥12/月起 | 按月或按年 | [查看介绍与套餐](https://jichangorigin.blog/airports/kunpeng/) |
-| **瞬云** | ¥18/月起 | 月付 / 年付 / 按量 | [查看介绍与套餐](https://jichangorigin.blog/airports/shunyun/) |
 | **速网云** | ¥9.9/月起 | 月付 / 年付 / 按量 | [查看介绍与套餐](https://jichangorigin.blog/airports/suwangyun/) |
 | **云图机场** | ¥20/月起 | 月付 / 年付 / 按量 | [查看介绍与套餐](https://jichangorigin.blog/airports/yuntu/) |
 | **全球云** | ¥20/月起 | 月付 / 年付 / 按量 | [查看介绍与套餐](https://jichangorigin.blog/airports/globalcloud/) |
