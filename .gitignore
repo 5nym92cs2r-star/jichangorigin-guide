@@ -1,0 +1,10 @@
+# Only these reviewed public files may be added normally.
+*
+!/.gitignore
+!/README.md
+!/ARTICLES.md
+!/.github/
+!/.github/workflows/
+!/.github/workflows/sync-public.yml
+!/.github/scripts/
+!/.github/scripts/sync-public.py
