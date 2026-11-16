@@ -1,4 +1,4 @@
-name: 同步公开文章目录
+name: 同步公开机场清单与文章
 
 on:
   workflow_dispatch:
@@ -9,6 +9,7 @@ on:
     paths:
       - '.github/workflows/sync-public.yml'
       - '.github/scripts/sync-public.py'
+      - 'README.md'
 
 permissions:
   contents: write
@@ -37,16 +38,16 @@ jobs:
           if tracked - allowed or any(Path(p).is_symlink() for p in tracked):
               raise SystemExit('Unexpected files in public repository; refusing synchronization.')
           PY
-      - name: 只读取网站公开 RSS
+      - name: 只读取网站公开机场目录与 RSS
         run: python3 .github/scripts/sync-public.py
-      - name: 自动上传文章目录变化
+      - name: 自动上传公开清单与文章变化
         run: |
-          git add -- ARTICLES.md
+          git add -- README.md ARTICLES.md
           if git diff --cached --quiet; then
-            echo '公开文章目录没有变化，无需提交。'
+            echo '公开清单与文章没有变化，无需提交。'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m '更新机场ORG公开文章目录'
+          git commit -m '同步机场ORG公开机场清单与文章'
           git push origin HEAD:main
