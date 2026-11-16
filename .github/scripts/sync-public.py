@@ -43,12 +43,13 @@ def render(data):
     rows.sort(key=lambda row: (row[0], row[2]), reverse=True)
     output = ["# 机场ORG · 公开文章目录", "", "[返回网站](https://jichangorigin.blog/) · [RSS订阅](https://jichangorigin.blog/rss.xml)", "",
               f"共 {len(rows)} 篇 RSS 文章。以下日期为文章发布日期，完整内容请前往网站阅读。", "",
-              "| 发布日期 | 文章 |", "| --- | --- |"]
+              "| 发布日期 | 分类 | 文章 |", "| --- | --- | --- |"]
     for date, title, url in rows:
         title = html.escape(title, quote=True)
         for char in "\\`*_[\u005d|":
             title = title.replace(char, f"&#{ord(char)};")
-        output.append(f'| {date} | <a href="{html.escape(url, quote=True)}">{title}</a> |')
+        category = "新手知识" if "/knowledge/beginner/" in url else "进阶知识" if "/knowledge/advanced/" in url else "AI知识"
+        output.append(f'| {date} | {category} | <a href="{html.escape(url, quote=True)}">{title}</a> |')
     return "\n".join(output) + "\n"
 
 
